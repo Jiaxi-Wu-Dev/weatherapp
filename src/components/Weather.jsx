@@ -29,7 +29,14 @@ class Weather extends Component {
         return (
             <div>
                 {<ul>
-                    {this.state.data.coord}
+                    <li>{this.state.data.coord}</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                    <li>Saturday</li>
+                    <li>Sunday</li>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
                 </ul>}
 
             </div>

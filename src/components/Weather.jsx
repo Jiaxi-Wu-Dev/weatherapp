@@ -16,7 +16,7 @@ class Weather extends Component {
             .then(res => {
                 const weatherData = res.data
                 console.log(res.data)
-                this.setState({ weatherData: weatherData })
+                this.setState({ data: weatherData })
             })
 
             .catch(error => {
@@ -28,9 +28,9 @@ class Weather extends Component {
     render() {
         return (
             <div>
-                <ul>
-                    {this.state.data.weather}
-                </ul>
+                {<ul>
+                    {this.state.data}
+                </ul>}
 
             </div>
         )

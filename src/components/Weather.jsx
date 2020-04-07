@@ -29,7 +29,7 @@ class Weather extends Component {
         return (
             <div>
                 {<ul>
-                    {this.state.weatherData};
+                    {this.weatherData.weather};
                 </ul>}
 
             </div>

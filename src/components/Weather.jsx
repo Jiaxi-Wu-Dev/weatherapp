@@ -28,7 +28,7 @@ class Weather extends Component {
     render() {
         return (
             <div>
-                {<ul>
+                {<ul className="weekdays">
                     <li>{this.state.data.coord}</li>
                     <li>Wednesday</li>
                     <li>Thursday</li>

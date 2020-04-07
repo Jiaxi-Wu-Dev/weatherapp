@@ -12,7 +12,7 @@ class Weather extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://api.openweathermap.org/data/2.5/weather?id=2172797&appid=736dcd581cc9d13aca218c4fc55cade8")
+        axios.get("https://api.openweathermap.org/data/2.5/weather?id=5128581&appid=736dcd581cc9d13aca218c4fc55cade8")
             .then(res => {
                 console.log(res.data)
             })
@@ -25,6 +25,11 @@ class Weather extends Component {
     render() {
         return (
             <div>
+                <h1>
+                    {this.state.data.weather}
+                    hellooo
+                </h1>
+
             </div>
         )
     }
